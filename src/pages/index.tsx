@@ -25,6 +25,14 @@ const IndexPage = ({ data, location }) => {
         <Link style={{ boxShadow: `none`, fontFamily: "Arial" }} to="/blog">
           <button>See Wordpress Pages</button>
         </Link>
+        <br></br>
+        <br></br>
+        <Link
+          style={{ boxShadow: `none`, fontFamily: "Arial" }}
+          to="/app/test-dynamic-api/1"
+        >
+          <button>Test Dynamic API</button>
+        </Link>
         <Image />
       </div>
 

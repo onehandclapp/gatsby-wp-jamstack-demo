@@ -74,7 +74,6 @@ exports.createPages = async ({
   })
 
   wpData.posts.nodes.forEach(post => {
-    console.log('>>>post.uri: ', post.uri)
     actions.createPage({
       path: `blog${post.uri}`,
       component: require.resolve("./src/templates/post-template.tsx"),
@@ -101,16 +100,25 @@ exports.createPages = async ({
     })
   })
 
-  // page.matchPath is a special key that's used for matching pages
-  // only on the client.
-  // if (page.path.match(/^\/app/)) {
-  //   page.matchPath = "/app/*"
-  //   // Update the page.
-  //   createPage(page)
-  // }
 
 
 }
+
+
+exports.onCreatePage = async ({
+  page,
+  actions
+}) => {
+  const {
+    createPage
+  } = actions
+
+  if (page.path.match(/^\/app/)) {
+    page.matchPath = "/app/*"
+    createPage(page)
+  }
+}
+
 
 exports.onCreateNode = ({
   node,

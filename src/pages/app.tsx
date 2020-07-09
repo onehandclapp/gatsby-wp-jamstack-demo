@@ -1,12 +1,11 @@
 import React from "react"
-import { RandomPerson } from "../modules/RandomPerson"
+import { TestDynamicApi } from "../modules/TestDynamicApi"
 import { Router as MyRouter } from "@reach/router"
 
 const Router = () => {
-  const sample = ""
   return (
     <MyRouter>
-      <RandomPerson path="/app/random-person/:results" />
+      <TestDynamicApi path="/app/test-dynamic-api/:results" />
     </MyRouter>
   )
 }

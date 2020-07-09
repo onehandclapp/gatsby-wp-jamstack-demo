@@ -16,7 +16,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   return (
     /* @ts-ignore */
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title="">
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
