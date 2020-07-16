@@ -11,8 +11,6 @@
   },
   "editor.rulers": [80],
   "editor.tabSize": 2,
-  "editor.formatOnSave": true,
-  "eslint.autoFixOnSave": true,
   "eslint.validate": [
     {
       "language": "javascript",
@@ -34,5 +32,7 @@
   "tslint.enable": false,
   "typescript.tsdk": "./node_modules/typescript/lib",
   "debug.node.autoAttach": "on",
-  "eslint.enable": false
+  "eslint.enable": false,
+  "files.autoSaveDelay": 0,
+  "files.autoSave": "onWindowChange"
 }

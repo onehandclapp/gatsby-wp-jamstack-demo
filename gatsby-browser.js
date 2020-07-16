@@ -3,3 +3,7 @@ import "typeface-montserrat"
 import "typeface-merriweather"
 
 import "prismjs/themes/prism.css"
+
+export {
+  wrapRootElement
+} from './src/apollo/wrap-root-element';
