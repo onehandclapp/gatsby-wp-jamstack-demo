@@ -3,7 +3,7 @@
   "private": true,
   "description": "React/Gatsby Worpdress Jamstack Demo",
   "version": "0.1.0",
-  "author": "sgpfsa <fredey.sabado@email.com>",
+  "author": "frx@mail.com",
   "dependencies": {
     "@apollo/react-hooks": "^3.1.5",
     "@reach/router": "^1.3.4",
@@ -60,7 +60,7 @@
     "gatsby"
   ],
   "scripts": {
-    "dev": "gatsby develop",
+    "dev": "gatsby develop -p 3000",
     "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
